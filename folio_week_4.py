@@ -11,10 +11,20 @@ for i in range(1, 6):
 # Both are legible with recognisable characters
 
 
-def basechange(x, y, z):
-    old_value = int(x, y)
-    new_value = int(old_value, z)
-    print(f"{x} in base {y} is {new_value} in base {z}")
+# def basechange(x, y, z):
+    # old_value = int(str(x), y)
+    # new_value = int(old_value, z)
+    # print(f"{x} in base {y} is {new_value} in base {z}")
 
 
-basechange(1200, 3, 10)
+# basechange(1200, 3, 10)
+
+a = "000111"
+b = "01010"
+c = int(a, 2) | int(b, 2)
+print(f"{bin(c)} which is {c}")
+
+a = 0b01010
+b = 0b000111
+c = a | b
+print(f"{bin(c)}")
